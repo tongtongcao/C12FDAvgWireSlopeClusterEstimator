@@ -25,7 +25,7 @@ def parse_args():
                         help="One or more input CSV files")
     parser.add_argument("--max_epochs", type=int, default=120,
                         help="Number of training epochs")
-    parser.add_argument("--batch_size", type=int, default=32,
+    parser.add_argument("--batch_size", type=int, default=256,
                         help="Batch size for DataLoader")
     parser.add_argument("--outdir", type=str, default="outputs/local",
                         help="Directory to save models and plots")
