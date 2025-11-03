@@ -67,8 +67,8 @@ class Plotter:
 
         """
         feature_names = ['avgWire', 'slope']
-        xlims = [(-5, 5), (-0.5, 0.5)]
-        fit_ranges = [(-0.5, 0.5), (-0.1, 0.1)]
+        xlims = [(-5, 5), (-0.2, 0.2)]
+        fit_ranges = [(-0.5, 0.5), (-0.025, 0.025)]
 
         for i in range(2):
             plt.figure(figsize=(8, 6))

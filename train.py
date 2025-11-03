@@ -31,9 +31,9 @@ def parse_args():
                         help="Directory to save models and plots")
     parser.add_argument("--end_name", type=str, default="",
                         help="Optional suffix to append to output files")
-    parser.add_argument("--d_model", type=int, default=64,
+    parser.add_argument("--d_model", type=int, default=32,
                         help="Transformer embedding dimension (must be divisible by nhead)")
-    parser.add_argument("--nhead", type=int, default=2,
+    parser.add_argument("--nhead", type=int, default=4,
                         help="Number of attention heads in the transformer")
     parser.add_argument("--num_layers", type=int, default=3,
                         help="Number of transformer encoder layers")
