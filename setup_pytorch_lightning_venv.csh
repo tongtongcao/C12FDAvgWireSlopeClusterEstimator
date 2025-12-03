@@ -9,9 +9,9 @@
 set use_cuda = 0       # 1 = use CUDA, 0 = CPU only
 
 if ( $use_cuda == 1 ) then
-    set venv_dir = /work/clas12/users/caot/ai/venvs/torch-cu124
+    set venv_dir = $PWD/venvs/torch-cu124
 else
-    set venv_dir = /work/clas12/users/caot/ai/venvs/torch-cpu
+    set venv_dir = $PWD/venvs/torch-cpu
 endif
 
 # === Load modules ===
@@ -22,10 +22,6 @@ if ( $use_cuda == 1 ) then
 else
     echo "🔹 CPU only mode (no CUDA module loaded)"
 endif
-
-# Python module
-module unload pymods
-module load pymods/3.9
 
 # === Create or reuse venv ===
 if ( ! -d $venv_dir ) then
